@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Handlebar JS</title>
+</head>
+<body>
+
+  <div class="container"></div>
+
+
+  <script id="student-template" type="text/x-handlebars-template">
+    <div>{{name}}</div>
+  </script>
+
+  <script id="shoe-template" type="text/x-handlebars-template">
+    {{#each shoes}}
+      <h2>{{title}}</h2>
+      <p>{{description}}</p>
+    {{/each}}
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="./js/shoes.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
