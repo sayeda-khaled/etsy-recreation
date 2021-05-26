@@ -17,10 +17,10 @@
   const source = document.querySelector('#shoe-template').innerHTML;
   const template = Handlebars.compile(source);
   const context = {
-    shoes: data.results,
+    data: data.results,
   }
   const html = template(context);
   // console.log(html);
-  document.querySelector('.container').innerHTML = html;
+  document.querySelector('.row').innerHTML = html;
 
 })();
